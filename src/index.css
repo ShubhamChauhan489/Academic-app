@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* FullCalendar Tailwind theme overrides */
+.fc-theme-tailwind .fc-button {
+    @apply bg-indigo-600 text-white px-3 py-1 rounded-lg shadow-md hover:bg-indigo-500 transition;
+  }
+  
+  .fc-theme-tailwind .fc-button:disabled {
+    @apply bg-gray-400 text-gray-200 cursor-not-allowed;
+  }
+  
+  .fc-theme-tailwind .fc-button-group > .fc-button:not(:first-child) {
+    @apply ml-2;
+  }
+  
+  .fc-theme-tailwind .fc-toolbar-title {
+    @apply text-lg md:text-xl font-bold text-indigo-700;
+  }
